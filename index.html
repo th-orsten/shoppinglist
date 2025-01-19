@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Einkaufszettel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="fonts/playwrite-de-grund/" />
+    <link rel="stylesheet" href="fonts/roboto/" />
+  </head>
+  <body>
+    <div class="content-container">
+      <h1>Einkaufszettel</h1>
+      <form id="shopping-form">
+        <div class="input-group">
+          <input
+            class="number"
+            type="number"
+            step="0.001"
+            min="0"
+            required
+            placeholder="Anzahl"
+          />
+          <select name="unit" id="unit">
+            <option value="Stck">Stck</option>
+            <option value="L">L</option>
+            <option value="Kg">Kg</option>
+            <option value="g">g</option>
+          </select>
+        </div>
+        <input class="product" type="text" required placeholder="Produkt" />
+        <p><button type="submit">Speichern</button></p>
+      </form>
+    </div>
+    <div id="output-container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

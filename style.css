@@ -1,0 +1,11 @@
+ /* Einstellungen für root */
+ :root {
+   --background-color: #737373;
+   --second-background-color: #F2F2F2;
+   --font-color: #8C8C8C;
+   --second-font-color: #D0D9D7;
+   --highlight-color: #B0BFBC;
+   --delete-color: red;
+   --add-color: green;
+ }
+
