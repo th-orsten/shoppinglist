@@ -8,7 +8,6 @@
   --highlight-color-4: #A85FD9;
   --highlight-color-5: #D2A1F1;
   --delete-color: red;
-  /* Variablennamen korrigiert: \"gradiant\" zu \"gradient\" */
   --gradient-color-one: #1A00C7;
   --gradient-color-two: #5B04C0;
   --gradient-color-three: #B301B5;
@@ -23,7 +22,7 @@ section {
   color: var(--font-color);
   background-color: var(--background-color);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .section-form {
@@ -77,8 +76,6 @@ section {
   flex-direction: column;
   align-items: center;
   font-family: 'Playwrite DE Grund', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   color: var(--font-color);
   background-color: var(--background-color);
 }
@@ -86,7 +83,7 @@ section {
 .item {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Verteilt den verfügbaren Platz zwischen den Elementen */
+  justify-content: space-between;
   padding-left: 25px;
   margin: 25px auto;
   height: 50px;
@@ -94,8 +91,6 @@ section {
   background-color: var(--highlight-color-4);
   border-radius: 10px;
 }
-
-
 
 .item button {
   height: 30px;
@@ -115,6 +110,7 @@ section {
 
 footer {
   font-family: 'Roboto';
+  font-size: smaller;
   width: 100%;
   height: 15vh;
   background-color: var(--background-color);
@@ -129,23 +125,25 @@ footer {
   justify-content: center;
   width: 30%;
   background-color: var(--highlight-color-1);
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-/* --- Kontakt-Bereich --- */
+
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Elemente oben anordnen */
+  justify-content: flex-start; 
   padding: 10px;
   width: 30%;
-  background-color: var(--highlight-color-1);
+  background-color: var(--highlight-color-2);
   border-radius: 10px;
   box-sizing: border-box;
 }
 
 .contact-header {
-  margin-bottom: 5px;  /* Kleiner Abstand zum Rand */
+  margin-bottom: 5px;  
   font-weight: bold;
 }
 
@@ -158,12 +156,12 @@ footer {
   color: var(--font-color);
 }
 
-/* --- Social Media Bereich --- */
+
 .social-media {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Elemente oben anordnen */
+  justify-content: flex-start;
   padding: 10px;
   width: 30%;
   background-color: var(--highlight-color-3);
@@ -189,7 +187,7 @@ footer {
   color: var(--font-color);
 }
 
-/* Optional: SVG-Logo Größe anpassen */
+
 .social-link svg {
   width: 24px;
   height: 24px;
