@@ -1,40 +1,54 @@
-/* Einstellungen für root */
+/* ==============================
+   Globale Variablen (CSS Custom Properties)
+   ==============================
+   Hier werden Farben und andere Werte als Variablen definiert,
+   sodass sie später leicht wiederverwendet und geändert werden können.
+*/
 :root {
-  --background-color: #737373;
-  --font-color: #F2F2F2;
-  --highlight-color-1: #26CCC7;
-  --highlight-color-2: #005956;
-  --highlight-color-3: #003445;
-  --highlight-color-4: #A85FD9;
-  --highlight-color-5: #D2A1F1;
-  --delete-color: red;
-  --gradient-color-one: #1A00C7;
-  --gradient-color-two: #5B04C0;
-  --gradient-color-three: #B301B5;
+  --background-color: #737373; /* Hintergrundfarbe der gesamten Seite */
+  --font-color: #F2F2F2; /* Standard-Schriftfarbe */
+  --highlight-color-1: #26CCC7; /* Hervorhebungsfarbe 1 */
+  --highlight-color-2: #005956; /* Hervorhebungsfarbe 2 */
+  --highlight-color-3: #003445; /* Hervorhebungsfarbe 3 */
+  --highlight-color-4: #A85FD9; /* Hervorhebungsfarbe 4 */
+  --highlight-color-5: #D2A1F1; /* Hervorhebungsfarbe 5 */
+  --delete-color: red; /* Farbe für Löschaktionen */
+  --gradient-color-one: #1A00C7; /* Farbverlauf - Startfarbe */
+  --gradient-color-two: #5B04C0; /* Farbverlauf - mittlere Farbe */
+  --gradient-color-three: #B301B5; /* Farbverlauf - Endfarbe */
 }
 
+/* ==============================
+   Allgemeine Stile
+   ============================== */
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Entfernt den Standardseitenrand */
+  padding: 0; /* Entfernt den Standard-Innenabstand */
 }
 
+/* ==============================
+   Abschnitt-Stile
+   ============================== */
 section {
-  color: var(--font-color);
-  background-color: var(--background-color);
-  width: 100%;
-  min-height: 100vh;
+  color: var(--font-color); /* Schriftfarbe aus den Variablen */
+  background-color: var(--background-color); /* Hintergrundfarbe */
+  width: 100%; /* Volle Breite */
+  min-height: 100vh; /* Mindestens die Höhe des gesamten sichtbaren Bereichs */
 }
 
 .section-form {
-  display: flex;
-  justify-content: center;
+  display: flex; /* Flexbox für zentrierte Ausrichtung */
+  justify-content: center; /* Zentriert den Inhalt horizontal */
 }
 
+/* ==============================
+   Inhalt-Container mit Farbverlauf
+   ============================== */
 .content-container {
   background-image: linear-gradient(to right, var(--gradient-color-one) 0%, var(--gradient-color-two) 50%, var(--gradient-color-three) 100%);
   padding: 15px;
   margin: 25px;
-  border-radius: 25px;
+  border-radius: 25px; /* Abgerundete Ecken */
   text-align: center;
   width: 50%;
   height: 200px;
@@ -43,6 +57,9 @@ section {
   font-weight: 400;
 }
 
+/* ==============================
+   Formularfelder im Inhalt-Container
+   ============================== */
 .content-container .number {
   height: 15px;
   width: 60px;
@@ -63,6 +80,7 @@ section {
   border-radius: 15px;
 }
 
+/* Stil für den Button im Formular */
 .content-container button {
   height: 21px;
   width: 135px;
@@ -71,6 +89,9 @@ section {
   background-color: var(--highlight-color-4);
 }
 
+/* ==============================
+   Ausgabecontainer für die Einträge
+   ============================== */
 #output-container {
   display: flex;
   flex-direction: column;
@@ -80,6 +101,9 @@ section {
   background-color: var(--background-color);
 }
 
+/* ==============================
+   Einzelne Listenelemente (.item)
+   ============================== */
 .item {
   display: flex;
   align-items: center;
@@ -92,6 +116,9 @@ section {
   border-radius: 10px;
 }
 
+/* ==============================
+   Buttons in Listenelementen
+   ============================== */
 .item button {
   height: 30px;
   border-radius: 50px;
@@ -104,35 +131,49 @@ section {
   transition: transform 0.2s ease;
 }
 
+/* Button Hover-Effekt */
 .item button:hover {
   opacity: 0.6;
 }
 
+/* ==============================
+   Durchgestrichene Elemente (erledigt)
+   ============================== */
 .completed {
-  text-decoration: line-through;
-  opacity: 0.6;
-  /* Optional: etwas ausgegraut */
+  text-decoration: line-through; /* Text durchstreichen */
+  opacity: 0.6; /* Etwas ausgegraut */
 }
 
-
+/* ==============================
+   Footer-Bereich
+   ============================== */
 footer {
   font-family: 'Roboto';
   font-size: smaller;
   color: var(--font-color);
   width: 100%;
-  height: 15vh;
-  padding-bottom: 15px;
+  height: 15vh; /* Höhe auf 15% der Bildschirmhöhe setzen */
+  padding-bottom: 15px; /* Abstand nach unten */
   background-color: var(--background-color);
   display: flex;
   justify-content: space-around;
 }
 
+/* ==============================
+   Responsive Design für kleine Bildschirme
+   ============================== */
 @media only screen and (max-width: 600px) {
   footer {
     font-size: 10px;
   }
+  .content-container {
+    width: 75%;
+  }
 }
 
+/* ==============================
+   Copyright-Bereich
+   ============================== */
 .copyright {
   font-weight: bold;
   display: flex;
@@ -144,7 +185,9 @@ footer {
   box-sizing: border-box;
 }
 
-
+/* ==============================
+   Kontakt-Bereich im Footer
+   ============================== */
 .contact {
   display: flex;
   flex-direction: column;
@@ -166,12 +209,15 @@ footer {
   text-align: center;
 }
 
+/* Links im Kontaktbereich */
 .contact-email a {
   text-decoration: none;
   color: var(--font-color);
 }
 
-
+/* ==============================
+   Social Media Bereich im Footer
+   ============================== */
 .social-media {
   display: flex;
   flex-direction: column;
@@ -189,8 +235,8 @@ footer {
   font-weight: bold;
 }
 
+/* Social-Media-Links */
 .social-link {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +248,7 @@ footer {
   color: var(--font-color);
 }
 
-
+/* SVG-Icons für Social Media */
 .social-link svg {
   width: 24px;
   height: 24px;
