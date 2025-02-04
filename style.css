@@ -85,7 +85,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding-left: 25px;
-  margin: 25px auto;
+  margin: 10px auto;
   height: 50px;
   width: 70%;
   background-color: var(--highlight-color-4);
@@ -105,8 +105,15 @@ section {
 }
 
 .item button:hover {
-  background-color: var(--delete-color);
+  opacity: 0.6;
 }
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  /* Optional: etwas ausgegraut */
+}
+
 
 footer {
   font-family: 'Roboto';
@@ -141,7 +148,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   padding: 10px;
   width: 30%;
   background-color: var(--highlight-color-2);
@@ -150,7 +157,7 @@ footer {
 }
 
 .contact-header {
-  margin-bottom: 5px;  
+  margin-bottom: 5px;
   font-weight: bold;
 }
 
@@ -182,7 +189,7 @@ footer {
 }
 
 .social-link {
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
