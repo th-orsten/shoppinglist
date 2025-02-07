@@ -186,7 +186,7 @@ footer {
 /* ==============================
    Responsive Design für kleine Bildschirme
    ============================== */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .content-container {
     width: 90%;
   }
