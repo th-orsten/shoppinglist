@@ -5,40 +5,59 @@
    sodass sie später leicht wiederverwendet und geändert werden können.
 */
 :root {
-  --background-color: #737373; /* Hintergrundfarbe der gesamten Seite */
-  --font-color: #F2F2F2; /* Standard-Schriftfarbe */
-  --highlight-color-1: #26CCC7; /* Hervorhebungsfarbe 1 */
-  --highlight-color-2: #005956; /* Hervorhebungsfarbe 2 */
-  --highlight-color-3: #003445; /* Hervorhebungsfarbe 3 */
-  --highlight-color-4: #A85FD9; /* Hervorhebungsfarbe 4 */
-  --highlight-color-5: #D2A1F1; /* Hervorhebungsfarbe 5 */
-  --delete-color: red; /* Farbe für Löschaktionen */
-  --gradient-color-one: #1A00C7; /* Farbverlauf - Startfarbe */
-  --gradient-color-two: #5B04C0; /* Farbverlauf - mittlere Farbe */
-  --gradient-color-three: #B301B5; /* Farbverlauf - Endfarbe */
+  --background-color: #737373;
+  /* Hintergrundfarbe der gesamten Seite */
+  --font-color: #F2F2F2;
+  /* Standard-Schriftfarbe */
+  --highlight-color-1: #26CCC7;
+  /* Hervorhebungsfarbe 1 */
+  --highlight-color-2: #005956;
+  /* Hervorhebungsfarbe 2 */
+  --highlight-color-3: #003445;
+  /* Hervorhebungsfarbe 3 */
+  --highlight-color-4: #A85FD9;
+  /* Hervorhebungsfarbe 4 */
+  --highlight-color-5: #D2A1F1;
+  /* Hervorhebungsfarbe 5 */
+  --delete-color: red;
+  /* Farbe für Löschaktionen */
+  --gradient-color-one: #1A00C7;
+  /* Farbverlauf - Startfarbe */
+  --gradient-color-two: #5B04C0;
+  /* Farbverlauf - mittlere Farbe */
+  --gradient-color-three: #B301B5;
+  /* Farbverlauf - Endfarbe */
 }
 
 /* ==============================
    Allgemeine Stile
    ============================== */
 body {
-  margin: 0; /* Entfernt den Standardseitenrand */
-  padding: 0; /* Entfernt den Standard-Innenabstand */
+  margin: 0;
+  /* Entfernt den Standardseitenrand */
+  padding: 0;
+  /* Entfernt den Standard-Innenabstand */
 }
 
 /* ==============================
    Abschnitt-Stile
    ============================== */
 section {
-  color: var(--font-color); /* Schriftfarbe aus den Variablen */
-  background-color: var(--background-color); /* Hintergrundfarbe */
-  width: 100%; /* Volle Breite */
-  min-height: 100vh; /* Mindestens die Höhe des gesamten sichtbaren Bereichs */
+  color: var(--font-color);
+  /* Schriftfarbe aus den Variablen */
+  background-color: var(--background-color);
+  /* Hintergrundfarbe */
+  width: 100%;
+  /* Volle Breite */
+  min-height: 100vh;
+  /* Mindestens die Höhe des gesamten sichtbaren Bereichs */
 }
 
 .section-form {
-  display: flex; /* Flexbox für zentrierte Ausrichtung */
-  justify-content: center; /* Zentriert den Inhalt horizontal */
+  display: flex;
+  /* Flexbox für zentrierte Ausrichtung */
+  justify-content: center;
+  /* Zentriert den Inhalt horizontal */
 }
 
 /* ==============================
@@ -48,7 +67,8 @@ section {
   background-image: linear-gradient(to right, var(--gradient-color-one) 0%, var(--gradient-color-two) 50%, var(--gradient-color-three) 100%);
   padding: 15px;
   margin: 25px;
-  border-radius: 25px; /* Abgerundete Ecken */
+  border-radius: 25px;
+  /* Abgerundete Ecken */
   text-align: center;
   width: 50%;
   height: 200px;
@@ -140,8 +160,10 @@ section {
    Durchgestrichene Elemente (erledigt)
    ============================== */
 .completed {
-  text-decoration: line-through; /* Text durchstreichen */
-  opacity: 0.6; /* Etwas ausgegraut */
+  text-decoration: line-through;
+  /* Text durchstreichen */
+  opacity: 0.6;
+  /* Etwas ausgegraut */
 }
 
 /* ==============================
@@ -152,8 +174,10 @@ footer {
   font-size: smaller;
   color: var(--font-color);
   width: 100%;
-  height: 15vh; /* Höhe auf 15% der Bildschirmhöhe setzen */
-  padding-bottom: 15px; /* Abstand nach unten */
+  height: 15vh;
+  /* Höhe auf 15% der Bildschirmhöhe setzen */
+  padding-bottom: 15px;
+  /* Abstand nach unten */
   background-color: var(--background-color);
   display: flex;
   justify-content: space-around;
@@ -163,27 +187,47 @@ footer {
    Responsive Design für kleine Bildschirme
    ============================== */
 @media only screen and (max-width: 600px) {
-  footer {
-    font-size: 10px;
-  }
   .content-container {
     width: 90%;
   }
+
   .content-container .number {
     height: 25px;
     width: 100px;
   }
+
   .content-container #unit {
     height: 31px;
     width: 100px;
   }
+
   .content-container .product {
     height: 25px;
     width: 215px;
   }
+
   .content-container button {
     height: 31px;
     width: 215px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    /* Höhe automatisch anpassen */
+    align-items: center;
+    padding: 10px 0;
+    font-size: 10px;
+  }
+
+  .copyright,
+  .contact,
+  .social-media {
+    width: 100%;
+    /* Volle Breite mit Abstand */
+    height: 100px;
+    margin-bottom: 10px;
+    /* Abstand zwischen den Blöcken */
   }
 }
 
