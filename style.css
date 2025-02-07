@@ -164,7 +164,7 @@ footer {
    ============================== */
 @media only screen and (max-width: 600px) {
   footer {
-    font-size: 10px;
+    font-size: px;
   }
   .content-container {
     width: 90%;
