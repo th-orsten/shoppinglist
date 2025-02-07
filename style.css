@@ -37,6 +37,9 @@ body {
   /* Entfernt den Standardseitenrand */
   padding: 0;
   /* Entfernt den Standard-Innenabstand */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* ==============================
@@ -51,6 +54,10 @@ section {
   /* Volle Breite */
   min-height: 100vh;
   /* Mindestens die Höhe des gesamten sichtbaren Bereichs */
+  flex-grow: 1; /* Nimmt den Platz ein, der übrig bleibt */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Inhalt vertikal zentrieren */
 }
 
 .section-form {
@@ -120,6 +127,11 @@ section {
   color: var(--font-color);
   background-color: var(--background-color);
 }
+
+#output-container:empty {
+  display: none; /* Versteckt den Bereich, wenn nichts darin ist */
+}
+
 
 /* ==============================
    Einzelne Listenelemente (.item)
