@@ -217,13 +217,13 @@ footer {
     /* Höhe automatisch anpassen */
     align-items: center;
     padding: 10px 0;
-    font-size: 10px;
+    font-size: ;
   }
 
   .copyright,
   .contact,
   .social-media {
-    width: 100%;
+    min-width: 90%;
     /* Volle Breite mit Abstand */
     height: 100px;
     margin-bottom: 10px;
