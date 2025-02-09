@@ -364,7 +364,9 @@ footer {
    Window für Settings 
    ===================== */
 #window {
+  display: flex;
   position: fixed;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -375,6 +377,7 @@ footer {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto';
 
   /* 🚨 Füge display: none hinzu, damit es nicht angezeigt wird */
   display: none;
@@ -390,4 +393,19 @@ footer {
   opacity: 1 !important;
   /* Macht es sichtbar */
   transform: translate(-50%, -50%);
+}
+
+.color-settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 10px;
+}
+
+.color-settings button {
+  background: none;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
 }
