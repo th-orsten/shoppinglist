@@ -80,3 +80,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadItems(); // Beim Laden gespeicherte Elemente wiederherstellen
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const settingsButton = document.querySelector(".settings");
+  const settingsWindow = document.getElementById("window");
+
+  settingsButton.addEventListener("click", function () {
+      settingsWindow.classList.toggle("settings-visible");
+  });
+});
