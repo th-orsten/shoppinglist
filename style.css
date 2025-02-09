@@ -29,6 +29,58 @@
   /* Farbverlauf - Endfarbe */
 }
 
+
+.color2 {
+  --background-color: #737373;
+  /* Hintergrundfarbe der gesamten Seite */
+  --font-color: #F2F2F2;
+  /* Standard-Schriftfarbe */
+  --highlight-color-1: #26CCC7;
+  /* Hervorhebungsfarbe 1 */
+  --highlight-color-2: #005956;
+  /* Hervorhebungsfarbe 2 */
+  --highlight-color-3: #003445;
+  /* Hervorhebungsfarbe 3 */
+  --highlight-color-4: #A85FD9;
+  /* Hervorhebungsfarbe 4 */
+  --highlight-color-5: #D2A1F1;
+  /* Hervorhebungsfarbe 5 */
+  --delete-color: red;
+  /* Farbe für Löschaktionen */
+  --gradient-color-one: #1A00C7;
+  /* Farbverlauf - Startfarbe */
+  --gradient-color-two: #5B04C0;
+  /* Farbverlauf - mittlere Farbe */
+  --gradient-color-three: #B301B5;
+  /* Farbverlauf - Endfarbe */
+}
+
+
+.color3 {
+  --background-color: #737373;
+  /* Hintergrundfarbe der gesamten Seite */
+  --font-color: #F2F2F2;
+  /* Standard-Schriftfarbe */
+  --highlight-color-1: #26CCC7;
+  /* Hervorhebungsfarbe 1 */
+  --highlight-color-2: #005956;
+  /* Hervorhebungsfarbe 2 */
+  --highlight-color-3: #003445;
+  /* Hervorhebungsfarbe 3 */
+  --highlight-color-4: #A85FD9;
+  /* Hervorhebungsfarbe 4 */
+  --highlight-color-5: #D2A1F1;
+  /* Hervorhebungsfarbe 5 */
+  --delete-color: red;
+  /* Farbe für Löschaktionen */
+  --gradient-color-one: #1A00C7;
+  /* Farbverlauf - Startfarbe */
+  --gradient-color-two: #5B04C0;
+  /* Farbverlauf - mittlere Farbe */
+  --gradient-color-three: #B301B5;
+  /* Farbverlauf - Endfarbe */
+}
+
 /* ==============================
    Allgemeine Stile
    ============================== */
@@ -404,8 +456,27 @@ footer {
 }
 
 .color-settings button {
+  display: flex;
   background: none;
+  align-items: center;
   border: none;
   margin: 5px;
   cursor: pointer;
+  color: var(--font-color);
+}
+
+.color-settings	svg {
+  margin-right: 15px;
+}
+
+.color-profil-1 svg {
+  fill: var(--highlight-color-4);
+}
+
+.color-profil-2, .color2 svg {
+  fill: var(--highlight-color-4);
+}
+
+.color-profil-3, .color3 svg {
+  fill: var(--highlight-color-4);
 }
