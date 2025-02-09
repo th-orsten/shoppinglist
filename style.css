@@ -52,7 +52,7 @@ section {
   /* Hintergrundfarbe */
   width: 100%;
   /* Volle Breite */
-  min-height: 100vh;
+  min-height: 50vh;
   /* Mindestens die Höhe des gesamten sichtbaren Bereichs */
   flex-grow: 1; /* Nimmt den Platz ein, der übrig bleibt */
   display: flex;
