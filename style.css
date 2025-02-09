@@ -54,24 +54,35 @@ section {
   /* Volle Breite */
   min-height: 50vh;
   /* Mindestens die Höhe des gesamten sichtbaren Bereichs */
-  flex-grow: 1; /* Nimmt den Platz ein, der übrig bleibt */
+  flex-grow: 1;
+  /* Nimmt den Platz ein, der übrig bleibt */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Inhalt vertikal zentrieren */
+  justify-content: flex-start;
+  /* Inhalt vertikal zentrieren */
 }
 
-.settings {
-  display: flex;
+.content-container .settings {
   position: absolute;
-  right: 25px;
+  top: 10px; /* Abstand vom oberen Rand */
+  right: 15px; /* Abstand vom rechten Rand */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Optional: Feste Breite setzen */
+  height: 40px; /* Optional: Feste Höhe setzen */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
   fill: var(--font-color);
 }
 
-.settings:hover {
-  cursor: pointer;
+.settings svg:hover {
   fill: var(--highlight-color-3);
-  transition: 2s;
+  transition: 0.3s;
 }
+
 
 .section-form {
   display: flex;
@@ -125,9 +136,9 @@ section {
 }
 
 /* Stil für den Button im Formular */
-.content-container button {
-  height: 21px;
-  width: 135px;
+.content-container #shopping-form button {
+  height: 30px;
+  width: 220px;
   border-radius: 50px;
   border: none;
   background-color: var(--highlight-color-4);
@@ -147,7 +158,8 @@ section {
 }
 
 #output-container:empty {
-  display: none; /* Versteckt den Bereich, wenn nichts darin ist */
+  display: none;
+  /* Versteckt den Bereich, wenn nichts darin ist */
 }
 
 
