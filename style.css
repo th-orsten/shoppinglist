@@ -9,11 +9,11 @@
   /* Hintergrundfarbe der gesamten Seite */
   --font-color: #F2F2F2;
   /* Standard-Schriftfarbe */
-  --highlight-color-1: #26CCC7;
+  --highlight-color-1: #410ff5;
   /* Hervorhebungsfarbe 1 */
-  --highlight-color-2: #005956;
+  --highlight-color-2: #0967d3;
   /* Hervorhebungsfarbe 2 */
-  --highlight-color-3: #003445;
+  --highlight-color-3: #2584af;
   /* Hervorhebungsfarbe 3 */
   --highlight-color-4: #A85FD9;
   /* Hervorhebungsfarbe 4 */
@@ -35,23 +35,23 @@
   /* Hintergrundfarbe der gesamten Seite */
   --font-color: #F2F2F2;
   /* Standard-Schriftfarbe */
-  --highlight-color-1: #26CCC7;
+  --highlight-color-1: #004C50;
   /* Hervorhebungsfarbe 1 */
-  --highlight-color-2: #005956;
+  --highlight-color-2: #00939C;
   /* Hervorhebungsfarbe 2 */
-  --highlight-color-3: #003445;
+  --highlight-color-3: #10ABB4;
   /* Hervorhebungsfarbe 3 */
-  --highlight-color-4: #A85FD9;
+  --highlight-color-4: #9C3E00;
   /* Hervorhebungsfarbe 4 */
-  --highlight-color-5: #D2A1F1;
+  --highlight-color-5: #502000;
   /* Hervorhebungsfarbe 5 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
-  --gradient-color-one: #1A00C7;
+  --gradient-color-one: #4BA7C0;
   /* Farbverlauf - Startfarbe */
-  --gradient-color-two: #5B04C0;
+  --gradient-color-two: #A9CB81;
   /* Farbverlauf - mittlere Farbe */
-  --gradient-color-three: #B301B5;
+  --gradient-color-three: #3B8CA9;
   /* Farbverlauf - Endfarbe */
 }
 
@@ -61,23 +61,23 @@
   /* Hintergrundfarbe der gesamten Seite */
   --font-color: #F2F2F2;
   /* Standard-Schriftfarbe */
-  --highlight-color-1: #26CCC7;
+  --highlight-color-1: #267365;
   /* Hervorhebungsfarbe 1 */
-  --highlight-color-2: #005956;
+  --highlight-color-2: #F2CB05;
   /* Hervorhebungsfarbe 2 */
-  --highlight-color-3: #003445;
+  --highlight-color-3: #F29F05;
   /* Hervorhebungsfarbe 3 */
-  --highlight-color-4: #A85FD9;
+  --highlight-color-4: #F28705;
   /* Hervorhebungsfarbe 4 */
-  --highlight-color-5: #D2A1F1;
+  --highlight-color-5: #F23030;
   /* Hervorhebungsfarbe 5 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
-  --gradient-color-one: #1A00C7;
+  --gradient-color-one: #1A72B8;
   /* Farbverlauf - Startfarbe */
-  --gradient-color-two: #5B04C0;
+  --gradient-color-two: #FDCD39;
   /* Farbverlauf - mittlere Farbe */
-  --gradient-color-three: #B301B5;
+  --gradient-color-three: #E64350;
   /* Farbverlauf - Endfarbe */
 }
 
@@ -470,13 +470,13 @@ footer {
 }
 
 .color-profil-1 svg {
-  fill: var(--highlight-color-4);
+  fill: #A85FD9;
 }
 
-.color-profil-2, .color2 svg {
-  fill: var(--highlight-color-4);
+.color-profil-2 svg {
+  fill: #9C3E00;
 }
 
-.color-profil-3, .color3 svg {
-  fill: var(--highlight-color-4);
+.color-profil-3 svg {
+  fill: #F28705;
 }
