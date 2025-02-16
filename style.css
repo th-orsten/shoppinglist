@@ -41,9 +41,9 @@
   /* Hervorhebungsfarbe 2 */
   --highlight-color-3: #10ABB4;
   /* Hervorhebungsfarbe 3 */
-  --highlight-color-4: #9C3E00;
+  --highlight-color-4: #088d4a;
   /* Hervorhebungsfarbe 4 */
-  --highlight-color-5: #502000;
+  --highlight-color-5: #149614;
   /* Hervorhebungsfarbe 5 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
@@ -474,7 +474,7 @@ footer {
 }
 
 .color-profil-2 svg {
-  fill: #9C3E00;
+  fill: #088d4a;
 }
 
 .color-profil-3 svg {
