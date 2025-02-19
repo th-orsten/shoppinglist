@@ -201,6 +201,11 @@ section {
   cursor: pointer;
 }
 
+.content-container #shopping-form button:hover {
+opacity: 0.8;
+transition: 0.4s;
+}
+
 /* ==============================
    Ausgabecontainer für die Einträge
    ============================== */
