@@ -134,6 +134,7 @@ section {
   fill: var(--font-color);
 }
 
+
 .settings svg:hover {
   fill: var(--highlight-color-3);
   transition: 0.3s;

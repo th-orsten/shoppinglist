@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#267365">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>Einkaufszettel</title>
+    <title aria-label="Einkaufszettel">Einkaufszettel</title>
     <link rel="icon" type="image/x-icon" href="icons/einkaufsliste.png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts.css" />
@@ -15,7 +15,7 @@
     <section>
       <div class="section-form">
         <div class="content-container">
-          <button class="settings">
+          <button class="settings" title="Einstellungen" aria-label="Einstellung öffnen" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="25px"
@@ -32,8 +32,8 @@
               />
             </svg>
           </button>
-          <h1>Einkaufszettel</h1>
-          <form id="shopping-form">
+          <h1 title="Titel Überschrift" aria-label="Überschrift" >Einkaufszettel</h1>
+          <form id="shopping-form" title="Artikel eingeben" aria-label="Artikel eingeben" >
             <div class="input-group">
               <input
                 class="number"
@@ -41,21 +41,16 @@
                 step="0.001"
                 min="0"
                 required
-                placeholder="Anzahl"
+                placeholder="Anzahl" title="Anzahl"
               />
-              <select name="unit" id="unit">
-                <option value="Stck">Stck</option>
-                <option value="L">L</option>
-                <option value="Kg">Kg</option>
-                <option value="Bund">Bund</option>
-                <option value="Stange/n">Stange/n</option>
-                <option value="Päckchen">Päckchen</option>
-                <option value="Tütchen">Tütchen</option>
-                <option value="Schachtel">Schachtel</option>
+              <select name="unit" id="unit" title="Einheit" >
+                <option value="Stck" title="Stück" aria-label="Menge in Stückzahl">Stck</option>
+                <option value="L" title="Liter" aria-label="Menge in Liter" >L</option>
+                <option value="Kg" title="Kilogramm" aria-label="Menge in Gewicht Kg">Kg</option>
               </select>
             </div>
-            <input class="product" type="text" required placeholder="Produkt" />
-            <p><button type="submit">Speichern</button></p>
+            <input class="product" type="text" required placeholder="Produkt" title="Produkt" aria-label="Produktname eingeben" />
+            <p><button type="submit" title="Speichern" aria-label="Eingabe Speichern" >Speichern</button></p>
           </form>
         </div>
       </div>
@@ -103,7 +98,7 @@
     <div id="window">
       <h3>Einstellungen</h3>
       <div class="color-settings">
-        <button class="color-profil-1">
+        <button class="color-profil-1" title="Farbe lila und blau" >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
@@ -122,7 +117,7 @@
           </svg>
           Colorprofil 1
         </button>
-        <button class="color-profil-2">
+        <button class="color-profil-2" title="Farbe grün und hellblau" >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
@@ -136,7 +131,7 @@
           </svg>
           Colorprofil 2
         </button>
-        <button class="color-profil-3">
+        <button class="color-profil-3" title="Farbe rot und gelb" >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
