@@ -97,7 +97,7 @@ body {
 /* ==============================
    Abschnitt-Stile
    ============================== */
-section {
+main {
   color: var(--font-color);
   /* Schriftfarbe aus den Variablen */
   background-color: var(--background-color);
