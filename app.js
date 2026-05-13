@@ -141,5 +141,5 @@ acceptBtn.addEventListener("click", () => {
 
 // abbrechen
 declineBtn.addEventListener("click", () => {
-  alert("Du musst die Bedingungen akzeptieren, um die Seite zu nutzen.");
+  alert("Um die Seite zu nutzen, müssen Sie die unten stehenden Nutzungsbedingungen akzeptieren!");
 });
