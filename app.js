@@ -118,3 +118,28 @@ document.addEventListener("DOMContentLoaded", () => {
     body.classList.add(savedColorProfile);
   }
 });
+
+// =====================
+// Consent Handling
+// =====================
+const overlay = document.getElementById("consent-overlay");
+const acceptBtn = document.getElementById("accept-btn");
+const declineBtn = document.getElementById("decline-btn");
+
+// prüfen ob schon akzeptiert wurde
+const consentGiven = localStorage.getItem("consentAccepted");
+
+if (consentGiven === "true") {
+  overlay.style.display = "none";
+}
+
+// akzeptieren
+acceptBtn.addEventListener("click", () => {
+  localStorage.setItem("consentAccepted", "true");
+  overlay.style.display = "none";
+});
+
+// abbrechen
+declineBtn.addEventListener("click", () => {
+  alert("Du musst die Bedingungen akzeptieren, um die Seite zu nutzen.");
+});
