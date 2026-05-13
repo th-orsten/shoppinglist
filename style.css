@@ -19,6 +19,8 @@
   /* Hervorhebungsfarbe 4 */
   --highlight-color-5: #D2A1F1;
   /* Hervorhebungsfarbe 5 */
+  --highlight-color-6: #3d3b3b;
+  /* Hervorhebungsfarbe 6 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
   --gradient-color-one: #1A00C7;
@@ -45,6 +47,8 @@
   /* Hervorhebungsfarbe 4 */
   --highlight-color-5: #302f2f;
   /* Hervorhebungsfarbe 5 */
+  --highlight-color-6: #3d3b3b;
+  /* Hervorhebungsfarbe 6 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
   --gradient-color-one: #1d2020;
@@ -71,6 +75,8 @@
   /* Hervorhebungsfarbe 4 */
   --highlight-color-5: #F23030;
   /* Hervorhebungsfarbe 5 */
+  --highlight-color-6: #3d3b3b;
+  /* Hervorhebungsfarbe 6 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
   --gradient-color-one: #1A72B8;
@@ -507,13 +513,20 @@ footer {
 
 /* Fenster */
 .consent-box {
-  width: 320px;
-  background: var(--highlight-color-5);
+  width: 90%;
+  max-width: 400px;
+
+  max-height: 80vh;       /* 🔥 wichtig */
+  overflow-y: auto;       /* 🔥 Scroll wenn zu groß */
+  scroll-behavior: smooth;
+
+  background: var(--highlight-color-6);
   color: var(--font-color);
   padding: 20px;
   border-radius: 15px;
   text-align: center;
   font-family: 'Roboto';
+
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
