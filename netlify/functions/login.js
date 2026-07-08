@@ -17,7 +17,11 @@ exports.handler = async (event) => {
     }
 
     // Blob Store der aktuellen Netlify-Seite verwenden
-    const store = getStore("shopping");
+    const store = getStore({
+      name: "shopping",
+      siteID: process.env.NETLIFY_SITE_ID,
+      token: process.env.NETLIFY_AUTH_TOKEN,
+    });
 
     const passwordHash = await store.get("passwordHash");
 
@@ -49,14 +53,13 @@ exports.handler = async (event) => {
       `session-${sessionId}`,
       JSON.stringify({
         created: Date.now(),
-      })
+      }),
     );
 
     return {
       statusCode: 200,
       headers: {
-        "Set-Cookie":
-          `session=${sessionId}; Path=/; HttpOnly; SameSite=Strict; Secure`,
+        "Set-Cookie": `session=${sessionId}; Path=/; HttpOnly; SameSite=Strict; Secure`,
       },
       body: JSON.stringify({
         success: true,
@@ -70,8 +73,8 @@ exports.handler = async (event) => {
       body: JSON.stringify({
         success: false,
         error: err.message,
-        stack: err.stack
-      })
+        stack: err.stack,
+      }),
     };
   }
 };
