@@ -11,16 +11,13 @@ exports.handler = async (event) => {
         statusCode: 400,
         body: JSON.stringify({
           success: false,
-          message: "Kein Passwort angegeben"
-        })
+          message: "Kein Passwort angegeben",
+        }),
       };
     }
 
-    const store = getStore({
-      name: "shopping",
-      siteID: process.env.SITE_ID,
-      token: process.env.NETLIFY_AUTH_TOKEN
-    });
+    // Blob Store der aktuellen Netlify-Seite verwenden
+    const store = getStore("shopping");
 
     const passwordHash = await store.get("passwordHash");
 
@@ -29,23 +26,20 @@ exports.handler = async (event) => {
         statusCode: 500,
         body: JSON.stringify({
           success: false,
-          message: "Kein Passwort eingerichtet"
-        })
+          message: "Kein Passwort eingerichtet",
+        }),
       };
     }
 
-    const passwordCorrect = await bcrypt.compare(
-      password,
-      passwordHash
-    );
+    const ok = await bcrypt.compare(password, passwordHash);
 
-    if (!passwordCorrect) {
+    if (!ok) {
       return {
         statusCode: 401,
         body: JSON.stringify({
           success: false,
-          message: "Falsches Passwort"
-        })
+          message: "Falsches Passwort",
+        }),
       };
     }
 
@@ -54,28 +48,29 @@ exports.handler = async (event) => {
     await store.set(
       `session-${sessionId}`,
       JSON.stringify({
-        created: Date.now()
+        created: Date.now(),
       })
     );
 
     return {
       statusCode: 200,
       headers: {
-        "Set-Cookie": `session=${sessionId}; Path=/; HttpOnly; SameSite=Strict`
+        "Set-Cookie":
+          `session=${sessionId}; Path=/; HttpOnly; SameSite=Strict; Secure`,
       },
       body: JSON.stringify({
         success: true,
-        message: "Login erfolgreich"
-      })
+      }),
     };
+  } catch (err) {
+    console.error(err);
 
-  } catch (error) {
     return {
       statusCode: 500,
       body: JSON.stringify({
         success: false,
-        error: error.message
-      })
+        error: err.message,
+      }),
     };
   }
 };
