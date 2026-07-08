@@ -1,4 +1,22 @@
+# Abhängigkeiten
 node_modules/
+
+# Netlify
+.netlify/
+
+# Umgebungsvariablen
 .env
-# Local Netlify folder
-.netlify
+.env.*
+
+# Lokale Testdateien
+cookies.txt
+
+# Deno
+deno.lock
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# VS Code Workspace (optional)
+*.code-workspace

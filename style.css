@@ -100,6 +100,11 @@ body {
   min-height: 100vh;
 }
 
+body.locked main,
+body.locked footer {
+  visibility: hidden;
+}
+
 /* ==============================
    Abschnitt-Stile
    ============================== */
@@ -558,4 +563,84 @@ footer {
 #accept-btn:hover,
 #decline-btn:hover {
   opacity: 0.8;
+}
+
+/* ==========================
+   LOGIN OVERLAY
+   ========================== */
+
+#login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+
+.login-box {
+  width: 90%;
+  max-width: 380px;
+
+  padding: 30px;
+
+  background: var(--background-color, #ffffff);
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+  text-align: center;
+}
+
+
+.login-box h2 {
+  margin-bottom: 25px;
+}
+
+
+.login-box input {
+  width: 100%;
+
+  padding: 12px;
+
+  margin-bottom: 15px;
+
+  border-radius: 8px;
+
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+
+
+.login-box button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+}
+
+
+#login-message {
+
+  margin-top: 15px;
+
+  color: red;
+
 }

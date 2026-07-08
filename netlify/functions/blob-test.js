@@ -2,7 +2,11 @@ const { getStore } = require("@netlify/blobs");
 
 exports.handler = async () => {
   try {
-    const store = getStore("shopping");
+    const store = getStore({
+      name: "shopping",
+      siteID: process.env.SITE_ID,
+      token: process.env.NETLIFY_AUTH_TOKEN,
+    });
 
     await store.set("test", "Hallo Thorsten!");
 
