@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/th-orsten/shoppinglist#readme",
   "dependencies": {
+    "@netlify/blobs": "^10.7.9",
     "bcryptjs": "^3.0.3",
     "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "netlify-cli": "^26.2.0"
   }
 }
