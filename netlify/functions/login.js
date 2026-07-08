@@ -63,14 +63,14 @@ exports.handler = async (event) => {
       }),
     };
   } catch (err) {
-    console.error(err);
+  console.error(err);
 
-    return {
-      statusCode: 500,
-      body: JSON.stringify({
-        success: false,
-        error: err.message,
-      }),
-    };
-  }
-};
+  return {
+    statusCode: 500,
+    body: JSON.stringify({
+      success: false,
+      error: err.message,
+      stack: err.stack
+    })
+  };
+}
