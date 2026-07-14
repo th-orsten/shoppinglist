@@ -542,7 +542,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "settings-visible"
           );
 
-        }, 20000);
+        }, 15000);
 
       }
     );

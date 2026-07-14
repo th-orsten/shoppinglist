@@ -26,9 +26,6 @@
     "netlify-cli": "^26.2.0"
   },
   "overrides": {
-    "esbuild": "0.28.1"
-  },
-  "overrides": {
     "esbuild": "0.28.1",
     "@opentelemetry/core": "2.8.0"
   }
