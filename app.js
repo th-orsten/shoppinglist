@@ -537,7 +537,12 @@ document.addEventListener("DOMContentLoaded", () => {
         settingsWindow.classList.toggle(
           "settings-visible"
         );
+        setTimeout(() => {
+          settingsWindow.classList.remove(
+            "settings-visible"
+          );
 
+        }, 20000);
 
       }
     );
