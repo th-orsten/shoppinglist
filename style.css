@@ -485,6 +485,16 @@ footer {
   color: var(--font-color);
 }
 
+#logout-btn {
+  display: flex;
+  background: none;
+  align-items: center;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  color: var(--highlight-color-5);
+}
+
 .color-settings svg {
   margin-right: 15px;
 }
@@ -499,16 +509,6 @@ footer {
 
 .color-profil-3 svg {
   fill: #f28705;
-}
-
-#logout-btn {
-   display: flex;
-  background: none;
-  align-items: center;
-  border: none;
-  margin: 5px;
-  cursor: pointer;
-  color: var(--highlight-color-5);
 }
 
 /* =====================
