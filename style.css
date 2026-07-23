@@ -499,6 +499,16 @@ footer {
   fill: #F28705;
 }
 
+#logout-btn {
+   display: flex;
+  background: none;
+  align-items: center;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  color: var(--highlight-color-5);
+}
+
 /* =====================
    Consent Overlay
    ===================== */
