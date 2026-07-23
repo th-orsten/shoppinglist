@@ -7,7 +7,7 @@
 :root {
   --background-color: #737373;
   /* Hintergrundfarbe der gesamten Seite */
-  --font-color: #F2F2F2;
+  --font-color: #f2f2f2;
   /* Standard-Schriftfarbe */
   --highlight-color-1: #410ff5;
   /* Hervorhebungsfarbe 1 */
@@ -15,27 +15,26 @@
   /* Hervorhebungsfarbe 2 */
   --highlight-color-3: #16739e;
   /* Hervorhebungsfarbe 3 */
-  --highlight-color-4: #A85FD9;
+  --highlight-color-4: #a85fd9;
   /* Hervorhebungsfarbe 4 */
-  --highlight-color-5: #D2A1F1;
+  --highlight-color-5: #d2a1f1;
   /* Hervorhebungsfarbe 5 */
   --highlight-color-6: #3d3b3b;
   /* Hervorhebungsfarbe 6 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
-  --gradient-color-one: #1A00C7;
+  --gradient-color-one: #1a00c7;
   /* Farbverlauf - Startfarbe */
-  --gradient-color-two: #5B04C0;
+  --gradient-color-two: #5b04c0;
   /* Farbverlauf - mittlere Farbe */
-  --gradient-color-three: #B301B5;
+  --gradient-color-three: #b301b5;
   /* Farbverlauf - Endfarbe */
 }
-
 
 .color2 {
   --background-color: #737373;
   /* Hintergrundfarbe der gesamten Seite */
-  --font-color: #F2F2F2;
+  --font-color: #f2f2f2;
   /* Standard-Schriftfarbe */
   --highlight-color-1: #000000;
   /* Hervorhebungsfarbe 1 */
@@ -59,11 +58,10 @@
   /* Farbverlauf - Endfarbe */
 }
 
-
 .color3 {
   --background-color: #737373;
   /* Hintergrundfarbe der gesamten Seite */
-  --font-color: #F2F2F2;
+  --font-color: #f2f2f2;
   /* Standard-Schriftfarbe */
   --highlight-color-1: #267365;
   /* Hervorhebungsfarbe 1 */
@@ -73,17 +71,17 @@
   /* Hervorhebungsfarbe 3 */
   --highlight-color-4: #794403;
   /* Hervorhebungsfarbe 4 */
-  --highlight-color-5: #F23030;
+  --highlight-color-5: #f23030;
   /* Hervorhebungsfarbe 5 */
   --highlight-color-6: #3d3b3b;
   /* Hervorhebungsfarbe 6 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
-  --gradient-color-one: #1A72B8;
+  --gradient-color-one: #1a72b8;
   /* Farbverlauf - Startfarbe */
-  --gradient-color-two: #FDCD39;
+  --gradient-color-two: #fdcd39;
   /* Farbverlauf - mittlere Farbe */
-  --gradient-color-three: #E64350;
+  --gradient-color-three: #e64350;
   /* Farbverlauf - Endfarbe */
 }
 
@@ -145,12 +143,10 @@ main {
   fill: var(--font-color);
 }
 
-
 .settings svg:hover {
   fill: var(--highlight-color-3);
   transition: 0.3s;
 }
-
 
 .section-form {
   display: flex;
@@ -163,7 +159,12 @@ main {
    Inhalt-Container mit Farbverlauf
    ============================== */
 .content-container {
-  background-image: linear-gradient(to right, var(--gradient-color-one) 0%, var(--gradient-color-two) 50%, var(--gradient-color-three) 100%);
+  background-image: linear-gradient(
+    to right,
+    var(--gradient-color-one) 0%,
+    var(--gradient-color-two) 50%,
+    var(--gradient-color-three) 100%
+  );
   padding: 15px;
   margin: 25px;
   border-radius: 25px;
@@ -171,7 +172,7 @@ main {
   text-align: center;
   width: 50%;
   height: 200px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   position: relative;
@@ -215,8 +216,8 @@ main {
 }
 
 .content-container #shopping-form button:hover {
-opacity: 0.8;
-transition: 0.4s;
+  opacity: 0.8;
+  transition: 0.4s;
 }
 
 /* ==============================
@@ -226,7 +227,7 @@ transition: 0.4s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Playwrite DE Grund', sans-serif;
+  font-family: "Playwrite DE Grund", sans-serif;
   color: var(--font-color);
   background-color: var(--background-color);
 }
@@ -235,7 +236,6 @@ transition: 0.4s;
   display: none;
   /* Versteckt den Bereich, wenn nichts darin ist */
 }
-
 
 /* ==============================
    Einzelne Listenelemente (.item)
@@ -286,7 +286,7 @@ transition: 0.4s;
    Footer-Bereich
    ============================== */
 footer {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: smaller;
   color: var(--font-color);
   width: 100%;
@@ -447,13 +447,15 @@ footer {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto';
+  font-family: "Roboto";
 
   /* 🚨 Füge display: none hinzu, damit es nicht angezeigt wird */
   display: none;
   opacity: 0;
   transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 }
 
 /* 🚀 Diese Klasse macht das Fenster sichtbar */
@@ -483,12 +485,12 @@ footer {
   color: var(--font-color);
 }
 
-.color-settings	svg {
+.color-settings svg {
   margin-right: 15px;
 }
 
 .color-profil-1 svg {
-  fill: #A85FD9;
+  fill: #a85fd9;
 }
 
 .color-profil-2 svg {
@@ -496,7 +498,7 @@ footer {
 }
 
 .color-profil-3 svg {
-  fill: #F28705;
+  fill: #f28705;
 }
 
 #logout-btn {
@@ -531,8 +533,8 @@ footer {
   width: 90%;
   max-width: 400px;
 
-  max-height: 80vh;       /* 🔥 wichtig */
-  overflow-y: auto;       /* 🔥 Scroll wenn zu groß */
+  max-height: 80vh; /* 🔥 wichtig */
+  overflow-y: auto; /* 🔥 Scroll wenn zu groß */
   scroll-behavior: smooth;
 
   background: var(--highlight-color-6);
@@ -540,9 +542,9 @@ footer {
   padding: 20px;
   border-radius: 15px;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Buttons */
@@ -591,7 +593,6 @@ footer {
   z-index: 9999;
 }
 
-
 .login-box {
   width: 90%;
   max-width: 380px;
@@ -602,16 +603,14 @@ footer {
 
   border-radius: 15px;
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
   text-align: center;
 }
 
-
 .login-box h2 {
   margin-bottom: 25px;
 }
-
 
 .login-box input {
   width: 100%;
@@ -629,9 +628,7 @@ footer {
   box-sizing: border-box;
 }
 
-
 .login-box button {
-
   width: 100%;
 
   padding: 12px;
@@ -643,14 +640,10 @@ footer {
   cursor: pointer;
 
   font-size: 16px;
-
 }
 
-
 #login-message {
-
   margin-top: 15px;
 
   color: red;
-
 }
