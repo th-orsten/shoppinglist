@@ -501,6 +501,7 @@ footer {
   margin: 5px;
   cursor: pointer;
   color: var(--font-color);
+  top: 15px;
 }
 
 .color-settings svg {
