@@ -485,23 +485,22 @@ footer {
   color: var(--font-color);
 }
 
-.account-settings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0;
-  font-size: 10px;
+.color-settings button,
+#logout-btn {
+    display: flex;
+    align-items: center;
+    width: 220px;          /* gleiche Breite */
+    margin: 5px auto;      /* zentriert */
+    padding: 8px 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--font-color);
+    text-align: left;
 }
 
-#logout-btn {
-  display: flex;
-  background: none;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  margin: 5px;
-  cursor: pointer;
-  color: var(--font-color);
+#logout-btn svg {
+    margin-right: 15px;
 }
 
 .color-settings svg {
