@@ -497,11 +497,11 @@ footer {
   display: flex;
   background: none;
   align-items: center;
+  justify-content: center;
   border: none;
   margin: 5px;
   cursor: pointer;
   color: var(--font-color);
-  top: 15px;
 }
 
 .color-settings svg {
