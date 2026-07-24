@@ -492,7 +492,7 @@ footer {
   border: none;
   margin: 5px;
   cursor: pointer;
-  color: var(--highlight-color-5);
+  color: var(--font-color);
 }
 
 .color-settings svg {
