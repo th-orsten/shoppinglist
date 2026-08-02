@@ -36,17 +36,17 @@
   /* Hintergrundfarbe der gesamten Seite */
   --font-color: #f2f2f2;
   /* Standard-Schriftfarbe */
-  --highlight-color-1: #000000;
+  --highlight-color-1: #363535;
   /* Hervorhebungsfarbe 1 */
-  --highlight-color-2: #212525;
+  --highlight-color-2: #4f5e5e;
   /* Hervorhebungsfarbe 2 */
-  --highlight-color-3: #1c2b2c;
+  --highlight-color-3: #26a7b1;
   /* Hervorhebungsfarbe 3 */
-  --highlight-color-4: #5a5656;
+  --highlight-color-4: #703a3a;
   /* Hervorhebungsfarbe 4 */
-  --highlight-color-5: #302f2f;
+  --highlight-color-5: #833333;
   /* Hervorhebungsfarbe 5 */
-  --highlight-color-6: #3d3b3b;
+  --highlight-color-6: #4c7913;
   /* Hervorhebungsfarbe 6 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
@@ -441,7 +441,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
-  height: 200px;
+  height: 300px;
   color: var(--font-color);
   background-color: var(--highlight-color-5);
   padding: 20px;
@@ -485,14 +485,22 @@ footer {
   color: var(--font-color);
 }
 
+.color-settings button,
 #logout-btn {
-  display: flex;
-  background: none;
-  align-items: center;
-  border: none;
-  margin: 5px;
-  cursor: pointer;
-  color: var(--highlight-color-5);
+    display: flex;
+    align-items: center;
+    width: 220px;          /* gleiche Breite */
+    margin: 5px auto;      /* zentriert */
+    padding: 8px 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--font-color);
+    text-align: left;
+}
+
+#logout-btn svg {
+    margin-right: 15px;
 }
 
 .color-settings svg {
