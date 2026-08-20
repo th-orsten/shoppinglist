@@ -18,10 +18,10 @@ exports.handler = async (event) => {
     const sessionId = match[1];
 
     const store = getStore({
-      name: "shopping",
-      siteID: process.env.SITE_ID,
-      token: process.env.NETLIFY_AUTH_TOKEN
-    });
+  name: "shopping",
+  siteID: process.env.NETLIFY_SITE_ID,
+  token: process.env.NETLIFY_AUTH_TOKEN
+});
 
     const session = await store.get(
       `session-${sessionId}`
