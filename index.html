@@ -233,35 +233,72 @@
     <div id="consent-overlay">
       <div class="consent-box">
         <h2>Datenschutzhinweis</h2>
+
         <p>
           Diese Webseite ist ein privates und nicht kommerzielles Projekt. Die
-          Nutzung der Webseite erfolgt ohne Registrierung und ohne Eingabe
-          personenbezogener Daten.
+          Nutzung der Einkaufsliste erfolgt über eine passwortgeschützte
+          Anmeldung. Eine Registrierung mit Name, E-Mail-Adresse oder anderen
+          persönlichen Profildaten ist nicht erforderlich.
         </p>
+
         <p>
-          Es werden keine Cookies, Tracking-Technologien, Analyse-Dienste oder
-          Werbenetzwerke verwendet. Die auf dieser Webseite verwendeten
-          Schriftarten und Ressourcen werden lokal über den Server dieser
-          Webseite bereitgestellt. Eine Verbindung zu externen Diensten wie
-          beispielsweise Google Fonts findet nicht statt.
+          Die eingegebenen Einkaufslisten werden nicht ausschließlich lokal im
+          Browser gespeichert, sondern über serverseitige Funktionen verarbeitet
+          und in einem von Netlify bereitgestellten Datenspeicher (<strong
+            >Netlify Blobs</strong
+          >) gespeichert. Dadurch können die Einkaufslisten von den vorgesehenen
+          Nutzern über die Webseite abgerufen und bearbeitet werden.
         </p>
+
         <p>
-          Die eingegebenen Einkaufslisten werden ausschließlich lokal im Browser
-          des jeweiligen Endgerätes gespeichert (`LocalStorage`) und nicht an
-          den Betreiber der Webseite übertragen.
+          Das zur Anmeldung verwendete Passwort wird nicht im Klartext
+          gespeichert. Es wird vor der Speicherung mit dem Verfahren
+          <strong>bcrypt</strong>
+          gehasht. Gespeichert wird ausschließlich der daraus erzeugte
+          Passwort-Hash.
         </p>
+
         <p>
-          Es erfolgt keine Weitergabe von Daten an Dritte zu Werbe-, Analyse-
-          oder Marketingzwecken.
+          Für die Aufrechterhaltung der Anmeldung wird ein technisch notwendiges
+          Session-Cookie verwendet. Dieses Cookie enthält keine Einkaufsliste
+          und kein Passwort. Es dient ausschließlich der Authentifizierung und
+          Sitzungsverwaltung. Das Cookie wird mit den Eigenschaften
+          <strong>HttpOnly</strong>, <strong>Secure</strong> und
+          <strong>SameSite=Strict</strong> verwendet.
         </p>
+
         <p>
-          Beim technischen Aufruf der Webseite können durch den Hosting-Anbieter
-          automatisch Server-Logdaten (z. B. IP-Adresse, Datum und Uhrzeit des
-          Zugriffs) verarbeitet werden. Diese Verarbeitung erfolgt
-          ausschließlich zur technischen Bereitstellung und Sicherheit der
-          Webseite. Diese Webseite dient ausschließlich privaten Zwecken und
-          verfolgt keine Gewinnerzielungsabsicht. Mit Klick auf „Akzeptieren“
-          bestätigen Sie, dass Sie diesen Hinweis zur Kenntnis genommen haben.
+          Für Hosting, serverseitige Funktionen und die Speicherung der Daten
+          wird der Dienst <strong>Netlify</strong> verwendet. Dabei können durch
+          den Hosting-Anbieter technisch erforderliche Informationen wie
+          beispielsweise IP-Adresse, Datum und Uhrzeit des Zugriffs, Browser-
+          und Geräteinformationen sowie technische Logdaten verarbeitet werden.
+          Diese Verarbeitung dient insbesondere der technischen Bereitstellung,
+          Sicherheit und Fehleranalyse der Webseite.
+        </p>
+
+        <p>
+          Die Webseite verwendet keine Werbenetzwerke und keine eigenen
+          Tracking- oder Analyse-Dienste. Die gespeicherten Einkaufslisten
+          werden nicht zu Werbe- oder Marketingzwecken verwendet und nicht vom
+          Betreiber zu diesen Zwecken verkauft.
+        </p>
+
+        <p>
+          Weitere Informationen zur Datenverarbeitung durch Netlify finden Sie
+          in den
+          <a
+            href="https://www.netlify.com/privacy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Datenschutzhinweisen von Netlify </a
+          >.
+        </p>
+
+        <p>
+          Mit Klick auf „Akzeptieren“ bestätigen Sie, dass Sie diesen
+          Datenschutzhinweis zur Kenntnis genommen haben.
         </p>
 
         <div class="consent-buttons">
