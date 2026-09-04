@@ -11,7 +11,7 @@
     "url": "git+https://github.com/th-orsten/shoppinglist.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Thorsten Schönrock",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/th-orsten/shoppinglist/issues"
@@ -21,7 +21,8 @@
     "@netlify/blobs": "^10.7.13",
     "bcryptjs": "^3.0.3",
     "fast-uri": "^4.1.1",
-    "jsonwebtoken": "^9.0.3"
+    "jsonwebtoken": "^9.0.3",
+    "toml": "^4.1.1"
   },
   "devDependencies": {
     "netlify-cli": "^27.1.2"
