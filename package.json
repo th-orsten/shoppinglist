@@ -22,7 +22,7 @@
     "bcryptjs": "^3.0.3",
     "fast-uri": "^4.1.1",
     "jsonwebtoken": "^9.0.3",
-    "toml": "^4.1.1"
+    "toml": "^4.1.2"
   },
   "devDependencies": {
     "netlify-cli": "^27.1.2"
