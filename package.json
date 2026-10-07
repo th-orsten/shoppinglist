@@ -26,7 +26,7 @@
     "toml": "^5.0.0"
   },
   "devDependencies": {
-    "netlify-cli": "^27.5.0"
+    "netlify-cli": "^27.11.2"
   },
   "overrides": {
     "esbuild": "0.28.1",
