@@ -26,10 +26,18 @@
     "toml": "^5.0.0"
   },
   "devDependencies": {
-    "netlify-cli": "^27.11.2"
+    "netlify-cli": "^27.14.2"
   },
   "overrides": {
     "esbuild": "0.28.1",
-    "@opentelemetry/core": "2.8.0"
+    "@opentelemetry/core": "2.8.0",
+    "@netlify/zip-it-and-ship-it": "16.5.1",
+    "netlify-cli": {
+      "toml": "5.0.1"
+    }
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "netlify-cli@27.14.2": true
   }
 }
