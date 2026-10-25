@@ -32,29 +32,29 @@
 }
 
 .color2 {
-  --background-color: #737373;
+  --background-color: #080808;
   /* Hintergrundfarbe der gesamten Seite */
   --font-color: #f2f2f2;
   /* Standard-Schriftfarbe */
-  --highlight-color-1: #363535;
+  --highlight-color-1: #151B22;
   /* Hervorhebungsfarbe 1 */
-  --highlight-color-2: #4f5e5e;
+  --highlight-color-2: #252525;
   /* Hervorhebungsfarbe 2 */
-  --highlight-color-3: #26a7b1;
+  --highlight-color-3: #343434;
   /* Hervorhebungsfarbe 3 */
-  --highlight-color-4: #703a3a;
+  --highlight-color-4: #403A36;
   /* Hervorhebungsfarbe 4 */
-  --highlight-color-5: #833333;
+  --highlight-color-5: #111315;
   /* Hervorhebungsfarbe 5 */
-  --highlight-color-6: #4c7913;
+  --highlight-color-6: #1c1c1c;
   /* Hervorhebungsfarbe 6 */
   --delete-color: red;
   /* Farbe für Löschaktionen */
-  --gradient-color-one: #1d2020;
+  --gradient-color-one: #111315;
   /* Farbverlauf - Startfarbe */
-  --gradient-color-two: #5b5e58;
+  --gradient-color-two: #343434;
   /* Farbverlauf - mittlere Farbe */
-  --gradient-color-three: #878a8b;
+  --gradient-color-three: #484848;
   /* Farbverlauf - Endfarbe */
 }
 
@@ -449,7 +449,7 @@ footer {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   font-family: "Roboto";
 
-  /* 🚨 Füge display: none hinzu, damit es nicht angezeigt wird */
+  /* Füge display: none hinzu, damit es nicht angezeigt wird */
   display: none;
   opacity: 0;
   transform: translate(-50%, -50%);
@@ -458,7 +458,7 @@ footer {
     transform 0.3s ease-in-out;
 }
 
-/* 🚀 Diese Klasse macht das Fenster sichtbar */
+/* Diese Klasse macht das Fenster sichtbar */
 .settings-visible {
   display: block !important;
   /* Stellt sicher, dass es nicht von anderen Regeln überschrieben wird */
